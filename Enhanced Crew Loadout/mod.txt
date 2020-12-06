@@ -1,0 +1,55 @@
+{
+    "name" : "Enhanced Crew Loadout",
+    "description" : "",
+    "author" : "",
+    "contact" : "",
+    "version" : "2",
+    "image": "icon.png",
+    "blt_version" : 2,
+	"hooks" : [
+		{   
+			"hook_id" : "lib/entry",
+			"script_path" : "LoadoutPanel.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/multiprofilemanager",
+			"script_path" : "ProfileMenu.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/missionbriefinggui",
+			"script_path" : "ProfileMenu.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/multiprofileitemgui",
+			"script_path" : "ProfileMenu.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/renderers/menunodeskillswitchgui",
+			"script_path" : "ProfileMenu.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "ProfileMenu.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/hud/newhudstatsscreen",
+			"script_path" : "EnhancedCrewLoadout.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/contractboxgui",
+			"script_path" : "EnhancedCrewLoadout.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/crimespreecontractboxgui",
+			"script_path" : "EnhancedCrewLoadout.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/crimespreedetailsmenucomponent",
+			"script_path" : "EnhancedCrewLoadout.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menu/missionbriefinggui",
+			"script_path" : "EnhancedCrewLoadout.lua"
+		}
+	]
+}
