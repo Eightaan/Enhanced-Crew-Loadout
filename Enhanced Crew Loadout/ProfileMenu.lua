@@ -55,7 +55,7 @@ if RequiredScript == "lib/managers/menumanager" then
 	ProfileSwitchInitiator = ProfileSwitchInitiator or class(SkillSwitchInitiator)
 	function ProfileSwitchInitiator:modify_node(node, data)
 		node:clean_items()
-		self:create_divider(node, "title", "profile_switch_title_profiles", nil, tweak_data.screen_colors.text)
+		self:create_divider(node, "title", "menu_account_picker", nil, tweak_data.screen_colors.text)
 		local mpm = managers.multi_profile
 		for i = 1, mpm:profile_count() do
 			local profile = mpm:profile(i)

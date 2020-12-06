@@ -824,7 +824,7 @@ function LoadoutPlaytimeItem:set_playtime_clbk(success, page)
 			local hoursEnd, _ = page:find("</hoursOnRecord>", hoursStart, false)
 			if hoursStart and hoursEnd and ((hoursEnd - hoursStart) > 2) then
 				local playtime = page:sub(hoursStart + 1, hoursEnd - 1)
-				text = managers.localization:text("loadout_hours_played", { HOURS = playtime })
+				text = string.lower(playtime .. "hrs")
 			end
 		else
 			if page:find("This profile is private.", 1, false) then
